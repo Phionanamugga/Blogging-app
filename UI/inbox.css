@@ -1,0 +1,19 @@
+
+  .container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin:10%;
+  }
+
+  input[type="text"]{
+    width:90%;
+    height:100px;
+  }
+button[type="submit"]{
+  height:100px;
+  width: 90px;
+  b
+}
+
