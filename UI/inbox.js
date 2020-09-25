@@ -1,6 +1,7 @@
 //selectors
 document.querySelector('form').addEventListener('submit',handleSubmitForm);
 document.querySelector('ul').addEventListener('click',handleClickUpdateorDelete)
+document.getElementById('clearAll').addEventListener('click',handleclearAll)
 
 //event handlers
 function handleSubmitForm(e){
@@ -17,6 +18,11 @@ function handleClickUpdateorDelete(e){
 
   if(e.target.name =='deleteButton')
     deleteBlog(e);
+
+}
+
+function handleclearAll(e){
+  document.querySelector('ul').innerHTML='';
 }
 
 //Helpers
@@ -35,9 +41,7 @@ function createBlog(blog){
   ul.appendChild(li);
   }
 
-  function updateBlog(e){
-   let item =e.target.parentNode;
-  }
+
 
   function deleteBlog(e){
     let item = e.target.parentNode;

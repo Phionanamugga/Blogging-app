@@ -1,19 +1,66 @@
-
+body{
+  background-color: rgb(211, 217, 219);
+}
   .container {
     border: 2px solid #dedede;
-    background-color: #f1f1f1;
+    background-color: rgb(243, 245, 247);
     border-radius: 5px;
     padding: 10px;
-    margin:10%;
+    margin:2%;
+    
+  }
+
+  form{
+    border-radius: 5px;
+    background-color: rgb(234, 237, 238);
   }
 
   input[type="text"]{
     width:90%;
     height:100px;
+    margin-top: 2px;
   }
+
+
 button[type="submit"]{
   height:100px;
   width: 90px;
-  b
+  color:green;
 }
 
+button:hover{
+  color:crimson;
+}
+
+.blogList{
+  border-radius: 5px;
+  margin-top:20px ;
+  height:100%;
+}
+
+ul{
+  padding-left: 0%;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  padding: 15px 0px;
+}
+
+.clearAll{
+  display: flex;
+  justify-content: flex-end;
+  padding: 7px 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.clearAll:hover{
+  color: crimson;
+}
+
+.blog-item{
+  flex-grow:1;
+}
