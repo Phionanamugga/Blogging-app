@@ -41,7 +41,12 @@ function createBlog(blog){
   ul.appendChild(li);
   }
 
-
+  function updateBlog(e){
+    const updatedBlog= document.createElement('li');
+    updatedBlog.textContent="editBlog"
+    let item = e.target.parentNode;
+    item.replaceChild(updatedBlog,item.children[0])
+  }
 
   function deleteBlog(e){
     let item = e.target.parentNode;
